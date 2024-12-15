@@ -1,0 +1,146 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #1e90ff); /* Light blue to deeper blue */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#search-zone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Weather App Container */
+#weather-info {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    min-height: 215px;
+}
+
+#loading {
+    display: none;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    font-size: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    min-height: 215px;
+}
+
+/* Address */
+#address {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Date String */
+#date-string {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Weather Icon */
+#icon img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Temps Section */
+#temps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.italic {
+    font-size: 1.2rem;
+}
+
+#high-temp, #low-temp, .bold{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Weather Description */
+#description {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Input and Button */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffaa00;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    #weather-info {
+        padding: 15px;
+    }
+
+    #address {
+        font-size: 1.2rem;
+    }
+
+    #temps {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #high-temp, #low-temp {
+        font-size: 1rem;
+    }
+}
