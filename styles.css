@@ -56,6 +56,18 @@ body {
     min-height: 215px;
 }
 
+#temp-select {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#temp-select div {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
 /* Address */
 #address {
     font-size: 1.5rem;

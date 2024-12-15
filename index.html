@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Weather</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="script.js"></script>
-</head>
-<body>
-    <div id="search-zone">
-        <input type="text" id="location-input">
-        <button id="search-button">Search</button>
-    </div>
-    <div id="weather-info">
-        <div id="address">Auckland, NZ</div>
-        <div id="date-string"></div>
-        <div id="icon"><img src="" alt="" id="weather-icon"></div>
-        <div id="temps">
-            <p class="italic">High</p><p id="high-temp" class="bold"></p><p class="symbol bold">°C</p>
-            <p class="italic">Low</p><p id="low-temp" class="bold"></p><p class="symbol bold">°C</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odin Weather</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="main.js"></script>
+    </head>
+    <body>
+        <div id="search-zone">
+            <input type="text" id="location-input" />
+            <button id="search-button">Search</button>
+            <div id="temp-select">
+                <div>
+                    <input type="radio" id="celsius" name="units" value="C" checked/>
+                    <label for="celsius">°C</label>
+                </div>
+                <div>
+                    <input type="radio" id="fahrenheit" name="units" value="F" />
+                    <label for="fahrenheit">°F</label>
+                </div>
+            </div>
         </div>
-        <div id="description">Cloudy and rainy</div>
-    </div>
-    <div id="loading">
-        Loading...
-    </div>
-</body>
+        <div id="weather-info">
+            <div id="address">Auckland, NZ</div>
+            <div id="date-string"></div>
+            <div id="icon"><img src="" alt="" id="weather-icon" /></div>
+            <div id="temps">
+                <p class="italic">High</p>
+                <p id="high-temp" class="bold"></p>
+                <p class="symbol bold">°C</p>
+                <p class="italic">Low</p>
+                <p id="low-temp" class="bold"></p>
+                <p class="symbol bold">°C</p>
+            </div>
+            <div id="description">Cloudy and rainy</div>
+        </div>
+        <div id="loading">Loading...</div>
+    </body>
 </html>

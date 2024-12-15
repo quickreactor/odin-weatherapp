@@ -12,6 +12,10 @@ let elements = {
     locationInput : $('#location-input'),
     searchButton : $('#search-button'),
     loadingDiv : $('#loading'),
+    cRadio : $('#celsius'),
+    fRadio : $('#fahrenheit'),
+    symbolPs : $$('.symbol'),
+    
     
     
 }
